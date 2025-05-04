@@ -33,7 +33,7 @@
 
         // 商品購入の関数
         function buyItem(no) {
-            if (no < items.length - items.length + 1|| items.length < no) {
+            if (no < 1|| items.length < no) {
                 console.log("エラー:" + no + "は未設定の商品番号です。");
             } else if (items[no - 1].stock > 0) {
                     console.log("商品番号: " + items[no - 1].id + ", 商品名: " + items[no - 1].name + "を購入します。");
